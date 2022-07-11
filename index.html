@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section>
@@ -15,28 +22,29 @@
         </header>
         <div class="calculator">
           <div class="interface">
-            <span class="screen"></span>
-            <button class="red">C</button>
-            <button>></button>
-            <button>/</button>
-            <button>X</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>-</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="equal-space">=</button>
-            <button class="zero-space">0</button>
-            <button>.</button>
+            <span class="screen" id="result"></span>
+            <button onclick="clean()" class="red">C</button>
+            <button onclick="removeLastNumber()">></button>
+            <button onclick="insert('/')">/</button>
+            <button onclick="insert('*')">X</button>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('-')">-</button>
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('+')">+</button>
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button onclick="total()" class="equal-space">=</button>
+            <button onclick="insert('0')" class="zero-space">0</button>
+            <button onclick="insert('.')">.</button>
           </div>
         </div>
       </div>
     </section>
+    <script src="scripts.js"></script>
   </body>
 </html>
